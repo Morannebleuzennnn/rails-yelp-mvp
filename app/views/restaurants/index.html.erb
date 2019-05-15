@@ -1,9 +1,10 @@
 <h1>Mes restaurants</h1>
 <ul>
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant_path(restaurant), class: 'pull-right btn btn-default' do %>
+    <li><%= link_to restaurant_path(restaurant), class: 'pull-right btn btn-default' %>
 <%= restaurant.name %></li>
+    <% end %>
   <% end %>
-  <% end %>
+<% end %>
 </ul>
 
